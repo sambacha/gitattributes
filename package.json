@@ -1,0 +1,30 @@
+{
+  "name": "gitattributes",
+  "version": "0.1.0",
+  "description": " .gitattributes file with GitHub Export",
+  "main": "src/index.js",
+  "bin": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "gatsby",
+    "gitattributes",
+    "quick-gitattributes"
+  ],
+  "author": "Sam Bacha",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "inquirer": "^6.5.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambacha/gitattributes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sambacha/gitattributes/issues"
+  },
+  "homepage": "https://github.com/sambacha/gitattributes#readme"
+}
