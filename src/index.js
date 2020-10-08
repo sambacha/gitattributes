@@ -4,28 +4,36 @@ const fs = require('fs');
 
 const gitattributesContent = `
 # gitattributes
-*.build  text
+package-lock.json merge=npm-merge-driver
+
+*.png    text diff=exif
+*.svg    text diff=exif
 *.cs     text diff=csharp
-*.csproj text
-*.dll    binary
-*.dtd    text
 *.html   text diff=html
 *.java   text diff=java
+*.json diff=jsondiff
+
+*.dll    binary
+*.snk    binary
+
+*.build  text
+*.csproj text
+*.dtd    text
 *.md     text
 *.nuspec text
 *.rng    text
 *.rngc   text
-*.sh     eol=lf
-*.shfbproj text
 *.sln    text
-*.snk    binary
 *.xml    text
 *.xsd    text
 *.xsl    text
 *.yml    text
 .gitattributes text
+
+*.sh     eol=lf
 KEY      text
 LICENSE* text
+
 `;
 
 (async () => {
