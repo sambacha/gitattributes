@@ -23,6 +23,9 @@ const gitattributesContent = `
 .gitattributes text
 KEY      text
 LICENSE* text
+*.png diff=exif
+*.gpg filter=gpg diff=gpg
+*.asc filter=gpg diff=gpg
 `;
 
 module.exports = gitattributesContent;
