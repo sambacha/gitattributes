@@ -13,6 +13,8 @@ const gitattributesContent = `
 *.rng    text
 *.rngc   text
 *.sh     eol=lf
+*.bash   eol=lf
+*.zsh    eol=lf
 *.shfbproj text
 *.sln    text
 *.snk    binary
