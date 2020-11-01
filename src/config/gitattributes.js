@@ -25,9 +25,30 @@ const gitattributesContent = `
 .gitattributes text
 KEY      text
 LICENSE* text
+
+# text files
+*.docx diff=word
+
+# date
+date*.txt filter=dater
+
+# merges
+# // git config --global merge.ours.driver true
+database.xml merge=ours
+
+# merge driver custom
+package-lock.json merge=npm-merge-driver
+npm-shrinkwrap.json merge=npm-merge-driver
+
+# image formats
 *.png diff=exif
+*.jpg diff=exif
+*.svg diff=exif
+
+# gpg related
 *.gpg filter=gpg diff=gpg
 *.asc filter=gpg diff=gpg
+
 `;
 
 module.exports = gitattributesContent;
