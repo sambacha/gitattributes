@@ -49,6 +49,10 @@ npm-shrinkwrap.json merge=npm-merge-driver
 *.gpg filter=gpg diff=gpg
 *.asc filter=gpg diff=gpg
 
+# git archive 
+test/ export-ignore
+
+
 `;
 
 module.exports = gitattributesContent;
