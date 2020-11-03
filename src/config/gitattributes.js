@@ -52,6 +52,13 @@ npm-shrinkwrap.json merge=npm-merge-driver
 # git archive 
 test/ export-ignore
 
+# git encryption 
+
+secrets.txt filter=git-crypt diff=git-crypt
+# create new definitions for each file. You can also add patterns in the following way:
+
+*.key filter=git-crypt diff=git-crypt
+secretdir/** filter=git-crypt diff=git-crypt
 
 `;
 
