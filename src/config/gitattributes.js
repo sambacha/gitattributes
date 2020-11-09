@@ -60,6 +60,11 @@ secrets.txt filter=git-crypt diff=git-crypt
 *.key filter=git-crypt diff=git-crypt
 secretdir/** filter=git-crypt diff=git-crypt
 
+# Prevent /bin/sh scripts from being clobbered by autocrlf=true
+git_ssh text eol=lf
+repo text eol=lf
+hooks/* text eol=lf
+
 `;
 
 module.exports = gitattributesContent;
