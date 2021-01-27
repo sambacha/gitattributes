@@ -1,0 +1,16 @@
+*.yml    text
+.gitattributes text
+KEY      text
+LICENSE* text
+
+# avoid merge conflicts in CHANGELOG
+/CHANGELOG.md		merge=union
+
+/.github            export-ignore
+/.editorconfig      export-ignore
+/.gitattributes     export-ignore
+/.gitignore         export-ignore
+
+git_ssh text eol=lf
+repo text eol=lf
+hooks/* text eol=lf
