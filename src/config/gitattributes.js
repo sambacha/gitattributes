@@ -32,9 +32,12 @@ LICENSE* text
 # date
 date*.txt filter=dater
 
-# merges
+# git merges
 # // git config --global merge.ours.driver true
 database.xml merge=ours
+
+# avoid merge conflicts in CHANGELOG
+/CHANGELOG.md		merge=union
 
 # merge driver custom
 package-lock.json merge=npm-merge-driver
@@ -49,8 +52,16 @@ npm-shrinkwrap.json merge=npm-merge-driver
 *.gpg filter=gpg diff=gpg
 *.asc filter=gpg diff=gpg
 
-# git archive 
+# git archive -- ignore files when creating an archive out of repository
 test/ export-ignore
+/.github            export-ignore
+/.editorconfig      export-ignore
+/.gitattributes     export-ignore
+/.gitignore         export-ignore
+/.scrutinizer.yml   export-ignore
+/phpunit.xml.dist   export-ignore
+/docs               export-ignore
+
 
 # git encryption 
 
