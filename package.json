@@ -1,6 +1,6 @@
 {
   "name": "gitattributes",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": " .gitattributes file with GitHub Export",
   "main": "src/index.js",
   "bin": "src/index.js",
