@@ -15,7 +15,7 @@
   "author": "Sam Bacha",
   "license": "ISC",
   "dependencies": {
-    "fs-extra": "^8.1.0",
+    "fs-extra": "^9.0.0",
     "inquirer": "^6.5.0"
   },
   "devDependencies": {},
