@@ -16,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^9.0.0",
-    "inquirer": "^7.0.0"
+    "inquirer": "^8.0.0"
   },
   "devDependencies": {},
   "repository": {
