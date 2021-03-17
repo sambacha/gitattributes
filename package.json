@@ -1,5 +1,5 @@
 {
-  "name": "gitattributes",
+  "name": "git-az",
   "version": "1.0.0",
   "description": " .gitattributes file with GitHub Export",
   "main": "src/index.js",
