@@ -49,9 +49,9 @@ database.xml merge=ours
 # gpg related
 + *.gpg filter=gpg diff=gpg
 + *.asc filter=gpg diff=gpg
-# git archive 
+# git archive
 test/ export-ignore
-# git encryption 
+# git encryption
 + secrets.txt filter=git-crypt diff=git-crypt
 # create new definitions for each file. You can also add patterns in the following way:
 + *.key filter=git-crypt diff=git-crypt
@@ -73,4 +73,4 @@ package-lock.json merge=npm-merge-driver
 
 ## LICENSE
 
-SPDX-License-Identifier: ISC/Apache-2.0 
+SPDX-License-Identifier: ISC/Apache-2.0
