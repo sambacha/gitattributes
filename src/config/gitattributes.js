@@ -26,18 +26,27 @@ const gitattributesContent = `
 KEY      text
 LICENSE* text
 
+
 # text files
 *.docx diff=word
 
+
 # date
 date*.txt filter=dater
+
 
 # git merges
 # // git config --global merge.ours.driver true
 database.xml merge=ours
 
+
 # avoid merge conflicts in CHANGELOG
 /CHANGELOG.md		merge=union
+
+
+# JSON Highlighting on GitHub w/ comments
+*.json linguist-language=jsonc
+
 
 # merge driver custom
 package-lock.json merge=npm-merge-driver
