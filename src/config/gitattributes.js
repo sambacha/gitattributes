@@ -28,27 +28,24 @@ const gitattributesContent = `
 KEY      text
 LICENSE* text
 
+# github linguist
+*.conf linguist-language=nginx
+# JSON Highlighting on GitHub w/ comments
+*.json linguist-language=jsonc
+
 
 # text files
 *.docx diff=word
 
-
 # date
 date*.txt filter=dater
-
 
 # git merges
 # // git config --global merge.ours.driver true
 database.xml merge=ours
 
-
 # avoid merge conflicts in CHANGELOG
 /CHANGELOG.md		merge=union
-
-
-# JSON Highlighting on GitHub w/ comments
-*.json linguist-language=jsonc
-
 
 # merge driver custom
 package-lock.json merge=npm-merge-driver
@@ -106,7 +103,8 @@ hooks/* text eol=lf
 *.controller merge=unityyamlmerge eol=lf
 
 
-## git-lfs ##
+## git-lfs ## 
+# really this is for Unity/Video Game/3D work
 
 #Image
 *.jpg filter=lfs diff=lfs merge=lfs -text
@@ -148,3 +146,5 @@ hooks/* text eol=lf
 `;
 
 module.exports = gitattributesContent;
+/** @exports gitattributesContent */
+
