@@ -1,36 +1,27 @@
 #!/usr/bin/env node
+/** 
+* @file giattributes cli
+* @version 1.2.1
+* @param init `.gitattributes` config 
+*/
+
 const inquirer = require('inquirer');
-const fs = require('fs');
+const fs = require('fs-extra');
 
 const gitattributesContent = `
 # gitattributes
 package-lock.json merge=npm-merge-driver
-
+*.sh     eol=lf
 *.png    text diff=exif
 *.svg    text diff=exif
-*.cs     text diff=csharp
 *.html   text diff=html
 *.java   text diff=java
 *.json diff=jsondiff
 
-*.dll    binary
-*.snk    binary
-
-*.build  text
-*.csproj text
-*.dtd    text
 *.md     text
-*.nuspec text
-*.rng    text
-*.rngc   text
-*.sln    text
-*.xml    text
-*.xsd    text
-*.xsl    text
 *.yml    text
 .gitattributes text
 
-*.sh     eol=lf
 KEY      text
 LICENSE* text
 
@@ -47,9 +38,11 @@ LICENSE* text
   ]);
   if (option) {
     const cwd = process.cwd();
+    /** @note eventually change to async  */
     fs.writeFileSync(`${cwd}/.gitattributes`, gitattributesContent);
     console.log('.gitattributes successfully created');
   } else {
     console.log(`.gitattributes creation failed choose 'y' to create it`);
   }
 })();
+/** @exports gitattributes */
