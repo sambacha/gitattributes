@@ -1,6 +1,6 @@
 {
   "name": "git-az",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": " .gitattributes file with GitHub Export",
   "main": "src/index.js",
   "bin": {
@@ -14,7 +14,7 @@
     "gitattributes",
     "quick-gitattributes"
   ],
-  "author": "Sam Bacha",
+  "author": "Sam Bacha <sambacha@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^10.0.0",
