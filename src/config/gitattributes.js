@@ -86,6 +86,12 @@ hooks/* text eol=lf
 
 # Git LFS
 
+# File Locks
+# https://github.com/git-lfs/git-lfs/wiki/File-Locking#tracking-lockable-files
+# git lfs track "*.lsif" --lockable
+*.lsif filter=lfs diff=lfs merge=lfs -text lockable
+
+
 ## 3D Files
 
 *.cs diff=csharp text
