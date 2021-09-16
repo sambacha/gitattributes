@@ -1,6 +1,6 @@
 {
   "name": "git-az",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": " .gitattributes file with GitHub Export",
   "main": "src/index.js",
   "bin": {
@@ -10,7 +10,10 @@
     "start": "node src/index.js"
   },
   "keywords": [
-    "gatsby",
+    "git",
+    "git lfs",
+    "github",
+    "git config",
     "gitattributes",
     "quick-gitattributes"
   ],
